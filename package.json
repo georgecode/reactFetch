@@ -1,7 +1,7 @@
 {
-  "name": "react_skeleton",
+  "name": "react_get_post",
   "version": "1.0.0",
-  "description": "react skeleton",
+  "description": "react getPost",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/georgecode/reactSkeleton.git"
+    "url": "git+https://github.com/georgecode/reactFetch.git"
   },
   "author": "george czurlanis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/georgecode/reactSkeleton/issues"
+    "url": "https://github.com/georgecode/reactFetch/issues"
   },
-  "homepage": "https://github.com/georgecode/reactSkeleton#readme",
+  "homepage": "https://github.com/georgecode/reactFetch#readme",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
