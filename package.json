@@ -18,15 +18,19 @@
   },
   "homepage": "https://github.com/georgecode/reactFetch#readme",
   "dependencies": {
+    "es6-promise": "^4.1.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-react": "^6.24.1",
+    "exports-loader": "^0.6.4",
     "html-webpack-plugin": "^2.28.0",
     "i": "^0.3.5",
+    "imports-loader": "^0.7.1",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.2"
   }
