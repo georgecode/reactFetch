@@ -17,8 +17,12 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 module.exports = {
   //entry: this is the entry point AKA the file
   //webpack will transform
-  entry: __dirname + '/app/index.js',
 
+  //this is the old entry without fetch
+  // entry: __dirname + '/app/index.js',
+
+  //this is the new entry: with fetch
+  entry: ['whatwg-fetch', __dirname + '/app/index.js'],
   //module: this is where you tell webpack what to
   //do with the code, each loader is a transformation
   //the code will go through before reaching
@@ -53,5 +57,15 @@ module.exports = {
   //In this case we are adding the instance of
   //the html-webpack-plugin we created at the top
   //of this file
-  plugins:[HTMLWebpackPluginConfig]
+  plugins:[HTMLWebpackPluginConfig,
+
+  //This is the plugins needed for fetch
+        new webpack.ProvidePlugin({
+                Promise: 'imports-loader?this=>global!exports-loader?global.Promise!es6-promise',
+                fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
+          })]
 };
+
+
+
+
